@@ -1,9 +1,6 @@
-const facts = require('./facts.js')
 const fs = require('fs');
 
-
-
-function getFact(facts) {
+module.exports = function getNextFact(facts, FactEntity) {
 
     return new Promise((resolve, reject) => {
         fs.readFile('currentFactPosition.txt', 'utf8', (err, data) => {
@@ -16,13 +13,10 @@ function getFact(facts) {
             if (currentFact >= facts.length)
                 currentFact = 0
     
-            fs.writeFile('currentFactPosition.txt', `${currentFact}`, () => null)
-            resolve(facts[currentFact])
-        
+            const fact = new FactEntity(currentFact, facts[currentFact])
+            resolve(fact)
         })
     });
 
 
 }
-
-module.exports = () => getFact(facts);

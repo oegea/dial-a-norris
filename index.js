@@ -1,16 +1,5 @@
-const main = async () => {
-    const saveFact = require('./saveFact.js')
-    const getFact = require('./getFact.js')
-    
-    const fact = await getFact()
-    console.log(`New Chuck Norris fact is ${fact}`)
-    
-    saveFact(fact)
-    
-}
+const applicationFactory = require('./application/factory.js')
+const generateNewFact = applicationFactory.fakeGenerateNewFact()
 
-const oneMinute = 60000
-const oneHour = oneMinute*60
-const oneDay = oneHour*24
-setInterval(() => main(), oneDay)
-main()
+const dailyRun = require('./infrastructure/dailyRun.js')
+dailyRun(() => generateNewFact())
