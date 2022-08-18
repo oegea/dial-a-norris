@@ -1,4 +1,30 @@
+const adaptToFestivalSynthesizer = (sentence) => {
+    // Replace "ñ" by "ni"
+    sentence = sentence.replaceAll("ñ", "ni")
+
+    // Replace commas by "."
+    sentence = sentence.replace(/,/g, ".")
+
+    // Remove accents
+    sentence = removeAccents(sentence)
+
+    // Remove "¿"
+    sentence = sentence.replace(/¿/g, "")
+
+    // Remove "¡"
+    sentence = sentence.replace(/¡/g, "")
+
+    return sentence
+}
+
+const removeAccents = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+} 
+
 module.exports = (fact) => {
+
+    const factText = adaptToFestivalSynthesizer(fact.text)
+
     const fs = require('fs');
     const { exec } = require("child_process");
 
@@ -12,7 +38,7 @@ module.exports = (fact) => {
         let newFileContent = ''
         for(let i = 0; i < fileLines.length; i++){
             if (i === 3)
-                newFileContent += `exten => 100,3,Festival('${fact.text}')\n`
+                newFileContent += `exten => 100,3,Festival('${factText}')\n`
             else    
                 newFileContent += `${fileLines[i]}\n`
         }
