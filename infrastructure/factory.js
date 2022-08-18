@@ -17,6 +17,6 @@ module.exports = {
 
     dailyRun: () => {
         const dailyRun = require('./dailyRun.js')
-        return () => dailyRun()
+        return (callback) => dailyRun(callback)
     }
 }
