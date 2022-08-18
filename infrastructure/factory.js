@@ -1,4 +1,12 @@
-module.exports = {
+const factory = {
+
+    getPreviousFact: () => {
+        const getPreviousFact = require('./getPreviousFact.js')
+        const facts = require('../facts.js')
+        const FactEntity = require('../domain/factEntity.js')
+        return () => getPreviousFact(facts, FactEntity)
+    },
+
     getNextFact: () => {
         const getNextFact = require('./getNextFact.js')
         const facts = require('../facts.js')
@@ -12,8 +20,9 @@ module.exports = {
     },
 
     runWebServer: () => {
+        const getPreviousFact = factory.getPreviousFact()
         const runWebServer = require('./runWebServer.js')
-        return () => runWebServer()
+        return () => runWebServer(getPreviousFact)
     },
 
     dailyRun: () => {
@@ -21,3 +30,5 @@ module.exports = {
         return (callback) => dailyRun(callback)
     }
 }
+
+module.exports = factory

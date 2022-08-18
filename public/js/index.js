@@ -8,3 +8,7 @@ var randomItem = chuckNorrisPhotos[Math.floor(Math.random()*chuckNorrisPhotos.le
 
 
 document.getElementById('funny-norris').src='./img/'+randomItem;
+
+fetch('/api/previous').then(res => res.json()).then(fact => {
+    document.getElementsByClassName('yesterday-sentence')[0].innerHTML = `"${fact.text}."`
+})
