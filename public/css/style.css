@@ -32,6 +32,13 @@ body {
     margin: 0 auto;
     max-width: 80%;
     align-items: center;
+    
+}
+
+@media (max-width: 900px)  { 
+    .content {
+        flex-direction: column;
+    }
 }
 
 .left {
