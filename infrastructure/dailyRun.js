@@ -1,6 +1,6 @@
 module.exports = (callback) => {
     const MINUTE = 60000
-    const HOUR_TO_RESET = 0
+    const HOUR_TO_RESET = 22
     let lastHour = -1
     
     function timeInterval(){
