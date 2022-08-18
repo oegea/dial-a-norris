@@ -1,0 +1,46 @@
+body {
+    font-family: 'Pragmatica ExtraLight', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.slogan {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.title {
+    font-size: 120px;
+    font-family: 'Bison', sans-serif;
+    margin-top: 10px;
+}
+
+.title > img {
+    max-width: 150px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.page-close {
+    font-size: 60px;
+    font-family: 'Bison', sans-serif;
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.footer {
+    max-width: 80%;
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+}
