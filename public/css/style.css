@@ -7,18 +7,20 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .slogan {
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 30px;
 }
 
 .title {
     font-size: 120px;
     font-family: 'Bison', sans-serif;
-    margin-top: 10px;
+    margin-top: 19px;
+    margin-bottom: 75px;
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
 }
 
 .title > img {
@@ -26,8 +28,18 @@ body {
 }
 
 .content {
+    display: flex;
     margin: 0 auto;
     max-width: 80%;
+    align-items: center;
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+.yesterday-sentence{
+    font-size: 30px;
 }
 
 .page-close {
@@ -36,11 +48,14 @@ body {
     margin-top: 10px;
 
     text-align: center;
+    flex-basis: 50%;
+}
+
+#funny-norris{
+    width: 80%;
 }
 
 .footer {
     max-width: 80%;
-    position: absolute;
-    bottom: 20px;
-    right: 10%;
+    margin: 60px auto 0 auto;
 }
