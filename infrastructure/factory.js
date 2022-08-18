@@ -7,7 +7,8 @@ module.exports = {
     },
 
     saveFact: () => {
-        return () => require('./saveFact.js')
+        const saveFact = require('./saveFact.js')
+        return (fact) => saveFact(fact)
     },
 
     runWebServer: () => {
