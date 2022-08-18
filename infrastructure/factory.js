@@ -8,5 +8,15 @@ module.exports = {
 
     saveFact: () => {
         return () => require('./saveFact.js')
+    },
+
+    runWebServer: () => {
+        const runWebServer = require('./runWebServer.js')
+        return () => runWebServer()
+    },
+
+    dailyRun: () => {
+        const dailyRun = require('./dailyRun.js')
+        return () => dailyRun()
     }
 }

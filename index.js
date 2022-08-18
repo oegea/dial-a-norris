@@ -1,5 +1,10 @@
 const applicationFactory = require('./application/factory.js')
-const generateNewFact = applicationFactory.fakeGenerateNewFact()
+const infrastructureFactory = require('./infrastructure/factory.js')
 
-const dailyRun = require('./infrastructure/dailyRun.js')
+const generateNewFact = applicationFactory.fakeGenerateNewFact()
+const runWebServer = infrastructureFactory.runWebServer()
+const dailyRun = infrastructureFactory.dailyRun()
+
 dailyRun(() => generateNewFact())
+
+runWebServer()
