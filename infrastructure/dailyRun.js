@@ -18,7 +18,6 @@ module.exports = (callback) => {
         if (now.getHours() !== lastHour)
             lastHour = now.getHours()
     
-        console.log('Iteration made, lastHour is now '+lastHour+', scheduled hour is '+HOUR_TO_RESET)
         setTimeout(timeInterval, MINUTE)
     }
     
