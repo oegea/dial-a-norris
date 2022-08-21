@@ -39,5 +39,20 @@ module.exports = [
     'Se sabe con certeza que las lágrimas de Chuck Norris curan el cáncer. No obstante, nadie lo ha visto llorar aún',
     'Si puedes ver a Chuck Norris, él puede verte. Si no puedes ver a Chuck Norris, puede que estes a sólo unos segundos de tu muerte',
     'Chuck Norris es el único que ha contado hasta el infinito, y lo ha hecho dos veces',
-    '¿Sabes por qué Chuck Norris no tiene corazón? Porque decidio prescindir de él después de tener dos infartos en 2018'
+    '¿Sabes por qué Chuck Norris no tiene corazón? Porque decidio prescindir de él después de tener dos infartos en 2018',
+    'A Chuck Norris no le sale publicidad de Youtube premium cuando se pone a ver videos',
+    'Es imposible matar a Chuck. Sin embargo, si alguien lo lograse, esa persona se convertiría automáticamente en Chuck Norris',
+    'Dicen que cuando era joven, Alastor Moody consiguió ver a Chuck Norris en acción. Desde entonces, su vista no volvió a ser la misma y ahora se le conoce como Ojo Loco',
+    'Cuando era joven, Chuck Norris se comió un dinosaurio en mal estado y le dio diarrea. Hoy en día, a esa sustancia la conocemos como petróleo',
+    'Cuando Dios provocó el diluvio universal, inundó sin querer la casa de Chuck Norris. No hemos vuelto a ver más intervenciones directas de Dios desde entonces',
+    'No malgastes tu dinero en sistemas de alarmas. Si temes que te roben en casa, cuelga una foto de Chuck Norris en la puerta, y estarás protegido',
+    'Antes de trabajar para Marca un Norris, yo tenia una bonita voz y me dedicaba a hacer parodias de gente famosa en YouTube… Hasta que me tocó parodiar a Chuck Norris. No cometas el mismo error que yo',
+    'A Chuck Norris le llegan actualizaciones a su movil cada año. Tiene un iPhone de 2007, pero Apple sabe que es más rentable programar una actualización sólo para él, que decirle que tiene un modelo obsoleto',
+    'El universo está en constante expansión por qué intenta escapar de Chuck Norris',
+    'Dicen que las películas de Chuck Norris son malas. Esto es por qué ninguna cinta podría registrar el verdadero poder de Chuck en acción, así que ninguna refleja la realidad',
+    'Los gimnasios de artes marciales, son en realidad templos de culto a Chuck Norris',
+    'Las tortugas desarrollaron su caparazón en un vano intento de esconderse de Chuck Norris',
+    'La NASA ha confirmado la existencia de vida extraterrestre inteligente de naturaleza hostil. El único motivo por el cual no nos han invadido, es porque saben que Chuck Norris está en el planeta',
+    'Podemos definir la extinción como el fenómeno que le ocurre a la especie de toda aquella criatura viva que ha cometido el error de intentar atacar a Chuck Norris',
+    'Si juegas al Mario Kart contra Chuck Norris, y le lanzas un caparazón rojo, el caparazón dará media vuelta e impactará contra tu vehículo'
 ]
