@@ -21,6 +21,7 @@ body {
     margin-bottom: 75px;
     border-top: 15px solid black;
     border-bottom: 15px solid black;
+    text-align: center;
 }
 
 .title > img {
@@ -31,14 +32,7 @@ body {
     display: flex;
     margin: 0 auto;
     max-width: 80%;
-    align-items: center;
     
-}
-
-@media (max-width: 900px)  { 
-    .content {
-        flex-direction: column;
-    }
 }
 
 .left {
@@ -65,4 +59,23 @@ body {
 .footer {
     max-width: 80%;
     margin: 60px auto 0 auto;
+}
+
+
+@media (max-width: 900px)  { 
+    .slogan{
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .title {
+        margin-bottom: 35px;
+    }
+
+    .page-close {
+        margin-top: 35px;
+    }
 }
