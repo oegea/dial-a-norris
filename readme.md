@@ -4,7 +4,7 @@ Dial a Norris is a dial-a-joke kind of service that plays a different Chuck Norr
 
 The service has been made with training purposes, and can be tested by calling to `+34 936 940 047`.
 
-You can also visit the main web site at `https://norris.oriol.im`.
+You can also visit the main web site at `http://norris.oriol.im`.
 
 Chuck Norris facts are in Spanish.
 
