@@ -38,14 +38,16 @@ module.exports = (fact) => {
         let newFileContent = ''
         for(let i = 0; i < fileLines.length; i++){
             if (i === 3)
-                newFileContent += `exten => 100,3,Festival('${factText}')\n`
+                newFileContent += `exten => 100,3,Festival('${factText}')`
             else    
-                newFileContent += `${fileLines[i]}\n`
+                newFileContent += `${fileLines[i]}`
+
+            newFileContent += (i < fileLines.length-1) ? '\n' : ''
         }
 
         fs.writeFile('currentFactPosition.txt', `${fact.id}`, () => null)
         fs.writeFile('/etc/asterisk/extensions.conf', newFileContent, () => {
-            exec("service asterisk restart")
+            exec("service asterisk reload")
         })
     
     });
